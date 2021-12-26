@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(182, 216, 148);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin: 10px;
+}
+
+.box{
+    background-color: rgb(48, 48, 190);
+    color: rgb(228, 224, 214);
+    margin: 20px 0;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 2px 5px 8px rgba(240, 30, 3, 0.5);
+    transform: translateX(450%);
+    transition: transform .5s ease;
+  
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-450%);
+    transition: transform .5s ease;
+}
+
+.box.show {
+    transform: translateX(0);
+    
+}
+
+.box h2{
+    font-size: 50px;
+}
+
